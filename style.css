@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(
+    94.3deg,
+    rgb(41, 46, 64) 10.9%,
+    rgba(81, 84, 115, 1) 87.1%
+  );
+  overflow: hidden;
+}
+
+.box {
+  position: relative;
+  width: 450px;
+  min-height: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 55px 55px 0 rgba(0, 0, 0, 0, 1);
+  border: 1px solid rgba(144, 134, 134, 0.5);
+  border-right: 20px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 10px solid rgba(140, 133, 133, 0.2);
+  backdrop-filter: blur(30px);
+  border-radius: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#dycalendar {
+  width: 100%;
+  padding: 50px;
+}
+#dycalendar table {
+  width: 100%;
+  margin-top: 50px;
+  border-spacing: 5px;
+}
+#dycalendar table tr:nth-child(1) td {
+  background-color: #5b5151;
+  background-image: linear-gradient(90deg, #999999 0%, #9face6 100%);
+
+  color: rgb(150, 68, 68);
+  border-radius: 90px;
+  font-weight: 600;
+  font-family: "Times New Roman", Times, serif;
+}
+#dycalendar table td {
+  color: rgb(255, 255, 255);
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 60px;
+}
+#dycalendar table td:hover {
+  color: rgb(76, 6, 6) !important;
+}
+.dycalendar-month-container .dycalendar-today-date,
+.dycalendar-month-container .dycalendar-target-date {
+  background-color: rgb(189, 192, 194);
+  color: rgb(170, 86, 86) !important;
+}
+.dycalendar-month-container .dycalendar-header .dycalendar-prev-next-btn {
+  color: rgb(255, 255, 255);
+  width: 44px;
+  height: 38px;
+  right: 4px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+
+.dycalendar-month-container .dycalendar-span-month-year {
+  color: rgb(255, 255, 255);
+
+  font-size: 1.5em;
+  font-weight: 500;
+  animation: animasyon 10s ease-in-out infinite;
+}
+@keyframes animasyon {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
